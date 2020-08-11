@@ -1,0 +1,20 @@
+{
+  "name": "Shinji",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "fly me to the moon",
+  "author": "licript",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.3",
+    "@vuepress/plugin-back-to-top": "^1.5.0",
+    "moment": "^2.26.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-auto-sidebar": "^1.5.0"
+  }
+}
