@@ -13,6 +13,6 @@ module.exports = {
         // docsDir: '/',
         nav: nav,
         lastUpdated: 'Last Updated',
-        docsDir: 'docs',
+        // docsDir: 'docs',
     },
 }
