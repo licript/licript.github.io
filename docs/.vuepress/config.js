@@ -8,9 +8,10 @@ module.exports = {
             titleMode: "uppercase",
         }
     },
-    base: '/',
+    base: '/licirpt.github.io/',
     themeConfig: {
-        // docsDir: '/',
+        docsDir: '/',
+        base: '/licirpt.github.io/',
         nav: nav,
         lastUpdated: 'Last Updated',
         // docsDir: 'docs',
