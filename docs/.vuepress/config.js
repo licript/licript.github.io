@@ -8,7 +8,7 @@ module.exports = {
             titleMode: "uppercase",
         }
     },
-    base: '/nerv/',
+    base: '/',
     themeConfig: {
         // docsDir: '/',
         nav: nav,
