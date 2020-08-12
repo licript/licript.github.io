@@ -1,7 +1,5 @@
 const moment = require('moment');
 
-moment.locale("zh-CN");
-
 module.exports = {
   '@vuepress/pwa': {
     serviceWorker: true,
@@ -14,10 +12,9 @@ module.exports = {
   '@vuepress/last-updated': {
     transformer: (timestamp, lang) => {
       const moment = require('moment')
-      moment.locale(lang)
-      return moment(timestamp).fromNow()
+      moment.locale("zh-CN");
+      return moment(timestamp).format('LLLL')
     }
-    // moment(timestamp).format('LLLL')
   },
   "vuepress-plugin-auto-sidebar": {
     titleMode: "uppercase",
