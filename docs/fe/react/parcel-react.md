@@ -40,7 +40,7 @@ or
 yarn add  react react-dom
 yarn add --dev @babel/preset-react @babel/preset-env parcel-bundler
 ```
-####4. Step-4
+#### 4. Step-4
 创建 & 配置 .babelrc
 ```javascript
 {
