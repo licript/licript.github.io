@@ -11,14 +11,14 @@ A: 极速打包、几乎0配置、开箱即用、热模块替换、自动转换.
 :::
 
 ## Quick Start
-####1. Step-1
+#### 1. Step-1
 通过npm 或者 yarn 安装 parcel
 Npm:
 `npm install -g parcel-bundler`
 Yarn:
 `yarn global add parcel-bundler`
 
-####2. Step-2
+#### 2. Step-2
 创建一个react项目:
 `mkdir parcel-react && cd parcel-react`
 创建package.json文件:
@@ -26,9 +26,9 @@ Yarn:
 or
 `npm init -y`
 
-####3. Step-3
+#### 3. Step-3
 安装所需依赖
-```javascript
+```bash
 npm install --save react
 npm install --save react-dom
 npm install --save-dev @babel/preset-react
@@ -36,7 +36,7 @@ npm install --save-dev @babel/preset-env
 npm install --save-dev parcel-bundler
 ```
 or
-```javascript
+```bash
 yarn add  react react-dom
 yarn add --dev @babel/preset-react @babel/preset-env parcel-bundler
 ```
@@ -47,7 +47,7 @@ yarn add --dev @babel/preset-react @babel/preset-env parcel-bundler
   "presets": ["@babel/preset-react"]
 }
 ```
-####5. Step-5
+#### 5. Step-5
 编写 index.html、index.js
 ```html
 // index.html
@@ -72,7 +72,7 @@ const App = ()=>(<div >this is a pacel react app</div>)
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 ```
-####6. Step-6
+#### 6. Step-6
 配置package.json
 ```json
 {
