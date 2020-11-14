@@ -1,3 +1,9 @@
+---
+tags:
+  - parcel
+  - react
+  - 打包
+---
 # Parcel 打包工具开发React App指北
 
 ## Q&A

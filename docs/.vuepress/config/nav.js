@@ -7,7 +7,8 @@ module.exports = [
     {text: 'JavaScript', link: '/fe/js/'},
     {text: 'TypeScript', link: '/fe/ts/'},
     {text: 'Webpack', link: '/fe/webpack/'},
-    {text: '设计模式', link: '/fe/design_pattern/'}
+    {text: '设计模式', link: '/fe/design_pattern/'},
+    {text: 'Git', link: '/fe/git/'},
   ]},
   { text: '后端', link: '/be/'},
   { text: '关于', link: '/me/'}

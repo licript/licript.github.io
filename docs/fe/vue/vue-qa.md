@@ -1,3 +1,7 @@
+---
+tags:
+  - vue
+---
 # Vue开发过程中遇到的问题 or 开发技巧
 ::: tip
 以下vue代码都采用class的写法

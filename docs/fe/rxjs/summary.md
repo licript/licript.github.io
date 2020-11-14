@@ -1,3 +1,9 @@
+---
+tags:
+  - rxjs
+  - 函数式
+---
+
 # RxJS Note
 
 ## 什么是RxJS?
