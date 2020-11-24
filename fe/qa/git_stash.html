@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Stash | A.T.Field</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="fly me to the moon">
+    <link rel="preload" href="/assets/css/0.styles.4dfeafd8.css" as="style"><link rel="preload" href="/assets/js/app.71e69398.js" as="script"><link rel="preload" href="/assets/js/2.cd271548.js" as="script"><link rel="preload" href="/assets/js/13.6f19abbc.js" as="script"><link rel="prefetch" href="/assets/js/10.186d373d.js"><link rel="prefetch" href="/assets/js/11.afb855e4.js"><link rel="prefetch" href="/assets/js/12.303074f5.js"><link rel="prefetch" href="/assets/js/14.7c8b3e57.js"><link rel="prefetch" href="/assets/js/15.90931b51.js"><link rel="prefetch" href="/assets/js/16.e5c75ddc.js"><link rel="prefetch" href="/assets/js/17.21abd788.js"><link rel="prefetch" href="/assets/js/18.a4b2c4b0.js"><link rel="prefetch" href="/assets/js/19.5a3cfb29.js"><link rel="prefetch" href="/assets/js/20.686769d5.js"><link rel="prefetch" href="/assets/js/21.fe58fd48.js"><link rel="prefetch" href="/assets/js/3.5fbcf2ef.js"><link rel="prefetch" href="/assets/js/4.512ca6ee.js"><link rel="prefetch" href="/assets/js/5.22b8f1ba.js"><link rel="prefetch" href="/assets/js/6.ae4009b1.js"><link rel="prefetch" href="/assets/js/7.3423e92e.js"><link rel="prefetch" href="/assets/js/8.a07ce9f8.js"><link rel="prefetch" href="/assets/js/9.e8505f6e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4dfeafd8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">A.T.Field</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link router-link-active">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link router-link-active">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>QA</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fe/qa/" aria-current="page" class="sidebar-link">QA</a></li><li><a href="/fe/qa/double_json.html" class="sidebar-link">双重JSON字符串解决方案</a></li><li><a href="/fe/qa/git_stash.html" aria-current="page" class="active sidebar-link">Git Stash</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="git-stash"><a href="#git-stash" class="header-anchor">#</a> Git Stash</h3> <p>最近工作中总是在同一个项目的不同需求之间周转,在开发过程中不想要频繁的commit、checkout branch, Google搜索了一下发现了<code>git stash</code>这个git命令,下面介绍一下<code>git stash</code>命令</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>先来看看git stash的作用: git stash用于想要保存当前的修改,但是想回到之前最后一次提交的干净的工作仓库时进行的操作.git stash将本地的修改保存起来,并且将当前代码切换到HEAD提交上.</p></div> <h4 id="应用举例"><a href="#应用举例" class="header-anchor">#</a> 应用举例</h4> <p>通过几个例子来说明一下git stash的用法</p> <ol><li>git stash
+当你开发进行到一半的时候,测试突然说有个bug让你修复,此时你代码写了一半还不想进行提交或者这次的feture不值得一次commit,这时候你就可以使用git stash.
+此时你的代码git status如下:</li></ol> <div class="language-git extra-class"><pre class="language-git"><code>On branch master
+Your branch is up to date with <span class="token string">'origin/master'</span>.
+
+Changes not staged for commit:
+  (use <span class="token string">&quot;git add &lt;file&gt;...&quot;</span> to update what will be committed)
+  (use <span class="token string">&quot;git checkout -- &lt;file&gt;...&quot;</span> to discard changes in working directory)
+
+        modified:   docs/.vuepress/config/nav.js
+
+no changes added to commit (use <span class="token string">&quot;git add&quot;</span> and/or <span class="token string">&quot;git commit -a&quot;</span>)
+</code></pre></div><p>你修改了nav.js,但是此时不想commit,你就可以使用git stash命令</p> <div class="language-git extra-class"><pre class="language-git"><code>git stash 
+Saved working directory and index state WIP on master: b91fff8 feat: 文章内容格式化
+</code></pre></div><p>git stash 会保存你当前未提交的修改到存储列表中,并且将当前代码会滚到所在分支的HEAD提交,也就是未修改前的状态.这样你就不要用产生一次非必要的commit,而且可以很好的切换分支去修复bug.
+当你修复完bug的时候切回你的开发分支想要将stash的代码还原回来的时候怎么办呢?我们可以用下面的命令了</p> <ol start="2"><li>git stash list
+git stash list 可以查看当前我们有多少次stash代码</li></ol> <div class="language-git extra-class"><pre class="language-git"><code>git stash list
+stash@{0}: WIP on master: b91fff8 feat: 文章内容格式化
+</code></pre></div><p>接下来就是恢复代码
+3. 恢复代码
+我们可以使用</p> <div class="language-git extra-class"><pre class="language-git"><code>git stahs pop
+</code></pre></div><p>git stash pop的意思是将stash list中最新的存贮还原.</p> <p>同样恢复代码我们也可以使用</p> <div class="language-git extra-class"><pre class="language-git"><code>git stash apply stash@{0}
+</code></pre></div><p>apply可以恢复指定的某次stash, stash@{0}类似于tag,从0开始,每次stash默认+1</p> <ol start="4"><li>git stash 次数太多根本分不清是哪次stash呢?
+这时候我们可以使用</li></ol> <div class="language-git extra-class"><pre class="language-git"><code>git stash save <span class="token string">&quot;本次修改了nav.js&quot;</span>
+// 之后查看有哪些stash
+git stash list
+stash@{0}: On master: 本次修改了nav.js
+</code></pre></div><p>save 命令就相当于给这次stash增加了注释,方便你好还原代码</p> <ol start="5"><li>其他
+git stash show: 用来展示存储单元和提交的diff结果.</li></ol> <div class="language-git extra-class"><pre class="language-git"><code>git stahs show
+
+docs/.vuepress/config/nav.js | 3 ++-
+1 file changed, 2 insertions(+), 1 deletion(-)
+</code></pre></div><ol start="6"><li>git stash clear 清空当前所有stash</li></ol> <div class="language-git extra-class"><pre class="language-git"><code>git stash clear
+</code></pre></div><h4 id="最后"><a href="#最后" class="header-anchor">#</a> 最后</h4> <p>git stash命令很好的帮助我们在开发中节约时间,目前本人在工作中常用的大概就是以上几个命令</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020年11月24日星期二晚上11点22分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fe/qa/double_json.html" class="prev">
+        双重JSON字符串解决方案
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.71e69398.js" defer></script><script src="/assets/js/2.cd271548.js" defer></script><script src="/assets/js/13.6f19abbc.js" defer></script>
+  </body>
+</html>

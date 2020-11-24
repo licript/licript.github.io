@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Parcel 打包工具开发React App指北 | A.T.Field</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="fly me to the moon">
+    <link rel="preload" href="/assets/css/0.styles.4dfeafd8.css" as="style"><link rel="preload" href="/assets/js/app.71e69398.js" as="script"><link rel="preload" href="/assets/js/2.cd271548.js" as="script"><link rel="preload" href="/assets/js/15.90931b51.js" as="script"><link rel="prefetch" href="/assets/js/10.186d373d.js"><link rel="prefetch" href="/assets/js/11.afb855e4.js"><link rel="prefetch" href="/assets/js/12.303074f5.js"><link rel="prefetch" href="/assets/js/13.6f19abbc.js"><link rel="prefetch" href="/assets/js/14.7c8b3e57.js"><link rel="prefetch" href="/assets/js/16.e5c75ddc.js"><link rel="prefetch" href="/assets/js/17.21abd788.js"><link rel="prefetch" href="/assets/js/18.a4b2c4b0.js"><link rel="prefetch" href="/assets/js/19.5a3cfb29.js"><link rel="prefetch" href="/assets/js/20.686769d5.js"><link rel="prefetch" href="/assets/js/21.fe58fd48.js"><link rel="prefetch" href="/assets/js/3.5fbcf2ef.js"><link rel="prefetch" href="/assets/js/4.512ca6ee.js"><link rel="prefetch" href="/assets/js/5.22b8f1ba.js"><link rel="prefetch" href="/assets/js/6.ae4009b1.js"><link rel="prefetch" href="/assets/js/7.3423e92e.js"><link rel="prefetch" href="/assets/js/8.a07ce9f8.js"><link rel="prefetch" href="/assets/js/9.e8505f6e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4dfeafd8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">A.T.Field</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link router-link-active">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>REACT</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fe/react/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/fe/react/parcel-react.html" aria-current="page" class="active sidebar-link">Parcel 打包工具开发React App指北</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/fe/react/parcel-react.html#q-a" class="sidebar-link">Q&amp;A</a></li><li class="sidebar-sub-header"><a href="/fe/react/parcel-react.html#quick-start" class="sidebar-link">Quick Start</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="parcel-打包工具开发react-app指北"><a href="#parcel-打包工具开发react-app指北" class="header-anchor">#</a> Parcel 打包工具开发React App指北</h1> <h2 id="q-a"><a href="#q-a" class="header-anchor">#</a> Q&amp;A</h2> <ol><li>Q: 什么是Parcel?
+A: 官方: 极速零配置Web应用打包工具 --&gt; <a href="https://zh.parceljs.org/" target="_blank" rel="noopener noreferrer">Parcel中文官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>Q: Parcel的优势
+A: 极速打包、几乎0配置、开箱即用、热模块替换、自动转换...(具体可参考官网指南)</li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>如果你觉得webpack太过于繁琐, 那么请尝试以下parcel吧!</p></div> <h2 id="quick-start"><a href="#quick-start" class="header-anchor">#</a> Quick Start</h2> <h4 id="_1-step-1"><a href="#_1-step-1" class="header-anchor">#</a> 1. Step-1</h4> <p>通过npm 或者 yarn 安装 parcel
+Npm:
+<code>npm install -g parcel-bundler</code>
+Yarn:
+<code>yarn global add parcel-bundler</code></p> <h4 id="_2-step-2"><a href="#_2-step-2" class="header-anchor">#</a> 2. Step-2</h4> <p>创建一个react项目:
+<code>mkdir parcel-react &amp;&amp; cd parcel-react</code>
+创建package.json文件:
+<code>yarn init -y</code>
+or
+<code>npm init -y</code></p> <h4 id="_3-step-3"><a href="#_3-step-3" class="header-anchor">#</a> 3. Step-3</h4> <p>安装所需依赖</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> --save react
+<span class="token function">npm</span> <span class="token function">install</span> --save react-dom
+<span class="token function">npm</span> <span class="token function">install</span> --save-dev @babel/preset-react
+<span class="token function">npm</span> <span class="token function">install</span> --save-dev @babel/preset-env
+<span class="token function">npm</span> <span class="token function">install</span> --save-dev parcel-bundler
+</code></pre></div><p>or</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span>  react react-dom
+<span class="token function">yarn</span> <span class="token function">add</span> --dev @babel/preset-react @babel/preset-env parcel-bundler
+</code></pre></div><h4 id="_4-step-4"><a href="#_4-step-4" class="header-anchor">#</a> 4. Step-4</h4> <p>创建 &amp; 配置 .babelrc</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;presets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@babel/preset-react&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_5-step-5"><a href="#_5-step-5" class="header-anchor">#</a> 5. Step-5</h4> <p>编写 index.html、index.js</p> <div class="language-html extra-class"><pre class="language-html"><code>// index.html
+<span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>React starter app<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// index.js</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> React <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>div <span class="token operator">&gt;</span><span class="token keyword">this</span> is a pacel react app<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">)</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>App<span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_6-step-6"><a href="#_6-step-6" class="header-anchor">#</a> 6. Step-6</h4> <p>配置package.json</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;parcel-react&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^17.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;react-dom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^17.0.1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@babel/core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.12.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@babel/preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.12.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@babel/preset-react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.12.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;babel-preset-react&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.24.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;parcel-bundler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.12.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;typescript&quot;: &quot;^4.0.5&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;parcel index.html&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>以上,一个 parcel打包的web app就基本完成了</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020年11月14日星期六晚上9点51分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fe/react/" class="prev router-link-active">
+        首页
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.71e69398.js" defer></script><script src="/assets/js/2.cd271548.js" defer></script><script src="/assets/js/15.90931b51.js" defer></script>
+  </body>
+</html>

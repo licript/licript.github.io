@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>什么是鸭子类型? | A.T.Field</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="fly me to the moon">
+    <link rel="preload" href="/assets/css/0.styles.4dfeafd8.css" as="style"><link rel="preload" href="/assets/js/app.71e69398.js" as="script"><link rel="preload" href="/assets/js/2.cd271548.js" as="script"><link rel="preload" href="/assets/js/9.e8505f6e.js" as="script"><link rel="prefetch" href="/assets/js/10.186d373d.js"><link rel="prefetch" href="/assets/js/11.afb855e4.js"><link rel="prefetch" href="/assets/js/12.303074f5.js"><link rel="prefetch" href="/assets/js/13.6f19abbc.js"><link rel="prefetch" href="/assets/js/14.7c8b3e57.js"><link rel="prefetch" href="/assets/js/15.90931b51.js"><link rel="prefetch" href="/assets/js/16.e5c75ddc.js"><link rel="prefetch" href="/assets/js/17.21abd788.js"><link rel="prefetch" href="/assets/js/18.a4b2c4b0.js"><link rel="prefetch" href="/assets/js/19.5a3cfb29.js"><link rel="prefetch" href="/assets/js/20.686769d5.js"><link rel="prefetch" href="/assets/js/21.fe58fd48.js"><link rel="prefetch" href="/assets/js/3.5fbcf2ef.js"><link rel="prefetch" href="/assets/js/4.512ca6ee.js"><link rel="prefetch" href="/assets/js/5.22b8f1ba.js"><link rel="prefetch" href="/assets/js/6.ae4009b1.js"><link rel="prefetch" href="/assets/js/7.3423e92e.js"><link rel="prefetch" href="/assets/js/8.a07ce9f8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4dfeafd8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">A.T.Field</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link router-link-active">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>DESIGN_PATTERN</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fe/design_pattern/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/fe/design_pattern/duck_typing.html" aria-current="page" class="active sidebar-link">什么是鸭子类型?</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="什么是鸭子类型"><a href="#什么是鸭子类型" class="header-anchor">#</a> 什么是鸭子类型?</h1> <p>Q: 什么是鸭子类型?<br>
+A: 通俗叫法: “如果它走起路来像鸭子, 叫起来也像鸭子, 那么它就是鸭子”</p> <h4 id="代码模拟鸭子类型"><a href="#代码模拟鸭子类型" class="header-anchor">#</a> 代码模拟鸭子类型</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 判断某种动物是不是“鸭子” 如果是鸭子就加入合唱团</span>
+<span class="token keyword">const</span> duck <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">duckSinging</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gagaga'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> chicken <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">duckSinging</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gagaga'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> choir <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> <span class="token function-variable function">joinChoir</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">animal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>animal <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> animal<span class="token punctuation">.</span>duckSingsing <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    choir<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>animal<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// join</span>
+<span class="token function">joinChoir</span><span class="token punctuation">(</span>duck<span class="token punctuation">)</span>
+<span class="token function">joinChor</span><span class="token punctuation">(</span>chicken<span class="token punctuation">)</span>
+</code></pre></div><p>此时的duck &amp; chicken某种意义上都会gagaga叫, 所有都是“🦆”</p> <p>可以用“多态”实现上面一段代码:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">makeSound</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">animal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>animal <span class="token keyword">instanceof</span> <span class="token class-name">Duck</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gagaga'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>animal <span class="token keyword">instanceof</span> <span class="token class-name">Chicken</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gegege'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Duck</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Chicken</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Duck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Chicken</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="对象-多态性"><a href="#对象-多态性" class="header-anchor">#</a> 对象“多态性”</h3> <p>进一步改写上面代码</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">makeSound</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">animal</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  animal<span class="token punctuation">.</span><span class="token function">sound</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Duck</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token class-name">Duck</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sound</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gagaga'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Chicken</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token class-name">Chicken</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sound</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'gigigi'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Duck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Chicken</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 在不动用makeSound的前提下追加对象</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Dog</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token class-name">Dog</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sound</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'wangwangwang'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">makeSound</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020年11月14日星期六晚上9点51分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fe/design_pattern/" class="prev router-link-active">
+        首页
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.71e69398.js" defer></script><script src="/assets/js/2.cd271548.js" defer></script><script src="/assets/js/9.e8505f6e.js" defer></script>
+  </body>
+</html>

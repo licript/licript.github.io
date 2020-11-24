@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>双重JSON字符串解决方案 | A.T.Field</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="fly me to the moon">
+    <link rel="preload" href="/assets/css/0.styles.4dfeafd8.css" as="style"><link rel="preload" href="/assets/js/app.71e69398.js" as="script"><link rel="preload" href="/assets/js/2.cd271548.js" as="script"><link rel="preload" href="/assets/js/12.303074f5.js" as="script"><link rel="prefetch" href="/assets/js/10.186d373d.js"><link rel="prefetch" href="/assets/js/11.afb855e4.js"><link rel="prefetch" href="/assets/js/13.6f19abbc.js"><link rel="prefetch" href="/assets/js/14.7c8b3e57.js"><link rel="prefetch" href="/assets/js/15.90931b51.js"><link rel="prefetch" href="/assets/js/16.e5c75ddc.js"><link rel="prefetch" href="/assets/js/17.21abd788.js"><link rel="prefetch" href="/assets/js/18.a4b2c4b0.js"><link rel="prefetch" href="/assets/js/19.5a3cfb29.js"><link rel="prefetch" href="/assets/js/20.686769d5.js"><link rel="prefetch" href="/assets/js/21.fe58fd48.js"><link rel="prefetch" href="/assets/js/3.5fbcf2ef.js"><link rel="prefetch" href="/assets/js/4.512ca6ee.js"><link rel="prefetch" href="/assets/js/5.22b8f1ba.js"><link rel="prefetch" href="/assets/js/6.ae4009b1.js"><link rel="prefetch" href="/assets/js/7.3423e92e.js"><link rel="prefetch" href="/assets/js/8.a07ce9f8.js"><link rel="prefetch" href="/assets/js/9.e8505f6e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4dfeafd8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">A.T.Field</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link router-link-active">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Nerv
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/fe/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/fe/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/fe/rxjs/" class="nav-link">
+  RxJS
+</a></li><li class="dropdown-item"><!----> <a href="/fe/js/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/ts/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/fe/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/fe/design_pattern/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/fe/qa/" class="nav-link router-link-active">
+  QA
+</a></li></ul></div></div><div class="nav-item"><a href="/be/" class="nav-link">
+  后端
+</a></div><div class="nav-item"><a href="/me/" class="nav-link">
+  关于
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>QA</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/fe/qa/" aria-current="page" class="sidebar-link">QA</a></li><li><a href="/fe/qa/double_json.html" aria-current="page" class="active sidebar-link">双重JSON字符串解决方案</a></li><li><a href="/fe/qa/git_stash.html" class="sidebar-link">Git Stash</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="双重json字符串解决方案"><a href="#双重json字符串解决方案" class="header-anchor">#</a> 双重JSON字符串解决方案</h4> <h5 id="问题"><a href="#问题" class="header-anchor">#</a> 问题:</h5> <p>直播业务里, h5需要通过广播来接收服务端的数据, 由于服务端的数据来自下游各个业务方, 由于golang的特性, 无法知道各个业务方具体数据类型,所以只能已字符串的形式传过来.App里h5要接收到广播首先是要通过一层native的透传才能拿到最新的广播数据,由于App端上直接对数据做了一层骚处理, 广播透传的数据就会出现了问题</p> <p>我们看下App端接收到广播后,再做一次处理后的广播数据:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span><span class="token property">&quot;cmd&quot;</span><span class="token operator">:</span><span class="token string">&quot;xxxx&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;data&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span><span class="token number">1606137120</span><span class="token punctuation">,</span><span class="token property">&quot;widget_list&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;4&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;type&quot;</span><span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token property">&quot;sub_key&quot;</span><span class="token operator">:</span><span class="token string">&quot;support_task_info&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;sub_data&quot;</span><span class="token operator">:</span><span class="token string">&quot;{\&quot;list\&quot;:[{\&quot;max\&quot;:5000,\&quot;current\&quot;:2259,\&quot;name\&quot;:\&quot;\&quot;,\&quot;isFinish\&quot;:0,\&quot;level\&quot;:2,\&quot;taskType\&quot;:5100,\&quot;act_id\&quot;:28,\&quot;sort\&quot;:6100},{\&quot;max\&quot;:2,\&quot;current\&quot;:0,\&quot;name\&quot;:\&quot;\&quot;,\&quot;isFinish\&quot;:0,\&quot;level\&quot;:0,\&quot;taskType\&quot;:5400,\&quot;act_id\&quot;:29,\&quot;sort\&quot;:5400}],\&quot;assist\&quot;:{\&quot;anchor\&quot;:{\&quot;uname\&quot;:\&quot;zbcs039\&quot;,\&quot;face\&quot;:\&quot;http://i0.hdslb.com/bfs/face/member/noface.jpg\&quot;},\&quot;assist\&quot;:{\&quot;uname\&quot;:\&quot;zbcs093\&quot;,\&quot;face\&quot;:\&quot;http://i0.hdslb.com/bfs/face/member/noface.jpg\&quot;}},\&quot;status\&quot;:1,\&quot;url\&quot;:\&quot;https://live.bilibili.com/activity/live-activity-battle/index.html?room_id=460730#/anchor-support\&quot;,\&quot;config_info\&quot;:{\&quot;bg_color\&quot;:\&quot;#1C2663\&quot;,\&quot;no_progress_color\&quot;:\&quot;#FFFFFF\&quot;,\&quot;yes_progress_color\&quot;:\&quot;#FCD089\&quot;,\&quot;level_font_color\&quot;:\&quot;#DBA95F\&quot;,\&quot;progress_font_color\&quot;:\&quot;#3C326F\&quot;,\&quot;task_font_color\&quot;:\&quot;#FEE1AB\&quot;,\&quot;list\&quot;:null,\&quot;url\&quot;:\&quot;https://live.bilibili.com/activity/live-activity-battle/index.html?room_id=460730#/anchor-support\&quot;,\&quot;act_id\&quot;:20}}&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;recv_time&quot;</span><span class="token operator">:</span><span class="token string">&quot;2020-11-23 21:11:59&quot;</span><span class="token punctuation">}</span>
+</code></pre></div><p>这是一个字符串,本身前端拿到JSON字符串可以通过JSON.parse解析为可处理的对象, 但是这段JSON字符串里有个sub_data数据又是个JSON字符串,这样的双重JSON字符串会导致,前端接收到的上面的JSON字符串是有问题的,直接放在浏览器控制台打印出来会报错:</p> <div class="language-js extra-class"><pre class="language-js"><code>Uncaught SyntaxError<span class="token operator">:</span> Unexpected identifier
+</code></pre></div><p>那么如何处理呢?</p> <h5 id="解决办法"><a href="#解决办法" class="header-anchor">#</a> 解决办法</h5> <ol><li>可以通过正则表达式匹配
+正则表达式匹配sub_data即可</li> <li>这个方法比较独特, 会对测试同学相当不友好...
+首先服务端发送的广播中的sub_data是个字符串, 我们可以让服务端将这段字符串进行encodeURIComponent, 然后将整体传给App端上, 这样就不会是双重JSON了, 然后只需要h5接收到信息后将sub_data的数据重新decode即可.</li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2020年11月24日星期二晚上11点22分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fe/qa/" class="prev router-link-active">
+        QA
+      </a></span> <span class="next"><a href="/fe/qa/git_stash.html">
+        Git Stash
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.71e69398.js" defer></script><script src="/assets/js/2.cd271548.js" defer></script><script src="/assets/js/12.303074f5.js" defer></script>
+  </body>
+</html>
